@@ -31,6 +31,8 @@ dependencies = {file = ["requirements.txt"]}
 
 [project.urls]
 Repository = "https://github.com/liangzheng1128/ComfyUI-RunningHub"
+Documentation = "https://github.com/liangzheng1128/ComfyUI-RunningHub#readme"
+"Bug Tracker" = "https://github.com/liangzheng1128/ComfyUI-RunningHub/issues"
 
 [tool.comfy]
 PublisherId = "liangzheng1128"
