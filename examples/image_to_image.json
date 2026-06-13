@@ -1,0 +1,59 @@
+{
+  "last_node_id": 5,
+  "last_link_id": 4,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "RH_Settings",
+      "pos": [100, 100],
+      "size": [320, 200],
+      "widgets_values": [
+        "YOUR_API_KEY_HERE",
+        "https://www.runninghub.cn",
+        "YOUR_WORKFLOW_ID"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [100, 400],
+      "size": [320, 250]
+    },
+    {
+      "id": 3,
+      "type": "RH_UploadImage",
+      "pos": [500, 400],
+      "size": [320, 100]
+    },
+    {
+      "id": 4,
+      "type": "RH_ImageToImage",
+      "pos": [900, 200],
+      "size": [320, 200],
+      "widgets_values": [
+        null,
+        "transform to watercolor style",
+        "YOUR_API_KEY_HERE",
+        "https://www.runninghub.cn",
+        "YOUR_WORKFLOW_ID",
+        "",
+        300
+      ]
+    },
+    {
+      "id": 5,
+      "type": "PreviewImage",
+      "pos": [1300, 200],
+      "size": [320, 250]
+    }
+  ],
+  "links": [
+    [1, 1, 0, 3, 0, "STRUCT"],
+    [2, 2, 0, 3, 1, "IMAGE"],
+    [3, 3, 0, 4, 0, "STRING"],
+    [4, 4, 0, 5, 0, "IMAGE"]
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

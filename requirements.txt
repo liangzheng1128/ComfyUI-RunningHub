@@ -1,0 +1,12 @@
+# Core dependencies (install alongside ComfyUI)
+requests>=2.28.0
+websocket-client>=1.6.0
+Pillow>=9.0.0
+numpy
+
+# The following are provided by ComfyUI itself — do NOT install separately
+# unless you are developing outside a ComfyUI environment:
+# torch
+# torchaudio
+# safetensors
+# opencv-python-headless

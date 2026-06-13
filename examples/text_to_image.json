@@ -1,0 +1,45 @@
+{
+  "last_node_id": 4,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "RH_Settings",
+      "pos": [100, 100],
+      "size": [320, 200],
+      "widgets_values": [
+        "YOUR_API_KEY_HERE",
+        "https://www.runninghub.cn",
+        "YOUR_WORKFLOW_ID"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "RH_NodeInfo",
+      "pos": [500, 100],
+      "size": [320, 150],
+      "widgets_values": [6, "text", "a beautiful sunset over the ocean"]
+    },
+    {
+      "id": 3,
+      "type": "RH_ExecuteWorkflow",
+      "pos": [900, 100],
+      "size": [320, 200],
+      "widgets_values": [null, 600, 3, false]
+    },
+    {
+      "id": 4,
+      "type": "PreviewImage",
+      "pos": [1300, 100],
+      "size": [320, 250]
+    }
+  ],
+  "links": [
+    [1, 1, 0, 3, 0, "STRUCT"],
+    [2, 2, 0, 3, 1, "ARRAY"],
+    [3, 3, 0, 4, 0, "IMAGE"]
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

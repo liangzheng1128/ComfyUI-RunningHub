@@ -1,0 +1,77 @@
+{
+  "last_node_id": 7,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "RH_Settings",
+      "pos": [50, 50],
+      "size": [320, 200],
+      "widgets_values": [
+        "YOUR_API_KEY_HERE",
+        "https://www.runninghub.cn",
+        "YOUR_TEXT_TO_IMAGE_WORKFLOW_ID"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "RH_NodeInfo",
+      "pos": [450, 50],
+      "size": [320, 150],
+      "widgets_values": [6, "text", "a futuristic city skyline at night"]
+    },
+    {
+      "id": 3,
+      "type": "RH_NodeInfo",
+      "pos": [450, 280],
+      "size": [320, 150],
+      "widgets_values": [7, "text", "blurry, low quality"]
+    },
+    {
+      "id": 4,
+      "type": "RH_ExecuteWorkflow",
+      "pos": [850, 150],
+      "size": [320, 200],
+      "widgets_values": [null, 600, 3, false]
+    },
+    {
+      "id": 5,
+      "type": "RH_ExtractImage",
+      "pos": [1250, 150],
+      "size": [320, 100],
+      "widgets_values": [0]
+    },
+    {
+      "id": 6,
+      "type": "RH_ImageToVideo",
+      "pos": [1250, 350],
+      "size": [320, 200],
+      "widgets_values": [
+        null,
+        "YOUR_API_KEY_HERE",
+        "https://www.runninghub.cn",
+        "YOUR_IMAGE_TO_VIDEO_WORKFLOW_ID",
+        "",
+        600
+      ]
+    },
+    {
+      "id": 7,
+      "type": "RH_DownloadVideo",
+      "pos": [1650, 350],
+      "size": [320, 150],
+      "widgets_values": ["", false, 100]
+    }
+  ],
+  "links": [
+    [1, 1, 0, 4, 0, "STRUCT"],
+    [2, 2, 0, 4, 1, "ARRAY"],
+    [3, 3, 0, 4, 1, "ARRAY"],
+    [4, 4, 0, 5, 0, "IMAGE"],
+    [5, 5, 0, 6, 0, "IMAGE"],
+    [6, 6, 0, 7, 0, "STRING"]
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
